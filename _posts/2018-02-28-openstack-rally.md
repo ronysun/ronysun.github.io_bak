@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "rally is a test framwork for openstack"
+title: "rally"
 categories:
   - openstack 
 ---
