@@ -4,7 +4,6 @@ title: "testlink1.9.16的搭建"
 categories:
   - test
 ---
-# testlink1.9.16的搭建
 在centos7.3上搭建testlink1.9.16，要求环境：
 - apache(httpd)
 - php version > 5.6
