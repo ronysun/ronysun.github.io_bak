@@ -133,3 +133,6 @@ when {
 ```
 上面的写法会报错，应修改如下：
 ${BUILD_ID}.EL7
+### Jenkins中job运行在docker中时，报错：
+![error-build-in-docker](https://github.com/ronysun/MarkdownImage/blob/master/Jenkins-build-in-docker-error.png)
+解决方法如下：
