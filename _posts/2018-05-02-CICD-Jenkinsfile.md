@@ -134,5 +134,8 @@ when {
 上面的写法会报错，应修改如下：
 ${BUILD_ID}.EL7
 ### Jenkins中job运行在docker中时，报错：
-![error-build-in-docker](https://github.com/ronysun/MarkdownImage/blob/master/Jenkins-build-in-docker-error.png)
-解决方法如下：
+![error-build-in-docker](https://github.com/ronysun/MarkdownImage/raw/master/Jenkins-build-in-docker-error.png)
+问题原因：[oci-mount的bug导致](https://access.redhat.com/errata/RHBA-2018:0434)  
+解决方法：  
+升级oci-mount到2.3.3以上版本
+升级docker
