@@ -2,7 +2,7 @@
 layout: post
 title: "CI环境搭建"
 categories:
-  - CICD
+  - CI&CD
 ---
 ## CI框架
 Jenkins+Gerrit+GIT
