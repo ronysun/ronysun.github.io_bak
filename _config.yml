@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:           Rony Sun 
 tagline:          'RonySun blog'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
+description:      'Rony blog'
 url:              https://ronysun.github.io/
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
