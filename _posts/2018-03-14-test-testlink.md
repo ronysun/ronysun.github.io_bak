@@ -4,7 +4,8 @@ title: "testlink1.9.16的搭建"
 categories:
   - 测试
 ---
-# 摘要
+## 摘要
+
 在centos7.3上搭建testlink1.9.16，要求环境：
 
 - apache(httpd)
@@ -55,7 +56,7 @@ $ docker run -d --name testlink -p 8082:80 -p 443:443 \
  bitnami/testlink:1.9.19
 ```
 
-<h2 id="1">数据库备份/恢复<h2 id="1">
+## 数据库备份/恢复
 
 ```bash
 docker exec -i 51415d2861be mysqldump -ubn_testlink bitnami_testlink|gzip > /opt/DATA/tlbackup/$the_date'-tlbk.sql.gz'
@@ -66,15 +67,15 @@ docker exec -i 51415d2861be mysql -ubn_testlink bitnami_testlink < 2020-02-13-tl
 
 以docker部署方式，升级版本1.9.16 to 1.9.19为例：
 
-1. 首先需要备份数据库，[方法](#1)
+1. 首先需要备份数据库
 2. Stop docker容器：docker stop testlink
 3. rename docker容器，作为备份：docker rename testlink testlink_bak
 4. 备份testlink数据文件夹：rsync -a /path/to/testlink-persistence /path/to/testlink-persistence.bkp.$(date +%Y%m%d-%H.%M.%S)
 5. 使用新版本docker image，并使用原有容器的volume，数据库信息等参数，run一个新的容器
-6. [如有必要升级数据库](#2)
+6. 如有必要升级数据库
 7. 可能需要运行，但我没用到。Copy your old config_db.inc.php and custom_config.inc.php over to the new directory.
 
-<h3 id="2">升级testlink数据库</h2>
+## 升级testlink数据库
 
 ```bash
 MariaDB [(none)]> use bitnami_testlink_test；
