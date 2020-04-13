@@ -30,7 +30,7 @@ centos7.3上php和mysql都需要升级
 docker network create testlink-tier
 ```
 
-2. Create a volume for MariaDB persistence and create a MariaDB container
+1. Create a volume for MariaDB persistence and create a MariaDB container
 
 ```bash
 $ docker volume create --name mariadb_data
@@ -43,7 +43,7 @@ $ docker run -d --name mariadb \
  bitnami/mariadb:latest
 ```
 
-3. Create volumes for Testlink persistence and launch the container
+1. Create volumes for Testlink persistence and launch the container
 
 ```bash
 $ docker volume create --name testlink_data
