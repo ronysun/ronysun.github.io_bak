@@ -1,0 +1,25 @@
+I",<h1 id="摘要">摘要</h1>
+
+<p><a href="https://docs.openstack.org/tempest/latest/overview.html#">官方文档</a></p>
+
+<h2 id="quickstart">Quickstart</h2>
+
+<ol>
+  <li>pip install tempest</li>
+  <li>tempest init cloud-01，此时会在当前目录下生成cloud-01目录，子目录中的etc包含tempest.conf和tempest.conf.sample。<a href="https://docs.openstack.org/tempest/latest/configuration.html#tempest-configuration">tempest.conf的配置</a></li>
+</ol>
+
+<h2 id="tempest中的module">tempest中的module</h2>
+
+<h3 id="abc">abc</h3>
+
+<p>Python本身不提供抽象类和接口机制，要想实现抽象类，可以借助abc模块。ABC是Abstract Base Class的缩写。</p>
+
+<h3 id="six">six</h3>
+
+<p>six是为了解决Python2 和 Python3 代码兼容性而产生的。six这个名字来源于 6 = 2 x 3，为什么不用‘Five’呢？5 = 2+3，一是因为乘法更有力量(more powerful)</p>
+
+<h3 id="stevedore">stevedore</h3>
+
+<p>stevedore是用来实现动态加载代码的开源模块。它是在OpenStack中用来加载插件的公共模块。可以独立于OpenStack而安装使用。stevedore使用setuptools的entry points来定义并加载插件。entry point引用的是定义在模块中的对象，比如类、函数、实例等，只要在import模块时能够被创建的对象都可以。</p>
+:ET

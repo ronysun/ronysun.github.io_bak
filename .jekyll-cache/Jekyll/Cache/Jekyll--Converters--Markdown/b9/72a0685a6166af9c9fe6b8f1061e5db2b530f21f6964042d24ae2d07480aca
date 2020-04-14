@@ -1,0 +1,80 @@
+I"@	<h2 id="dockerfile">Dockerfile</h2>
+<p>Dockerfile常用命令：</p>
+
+<p>ADD &amp; COPY ：拷贝文件到镜像中。ADD能够自动解压.gz .zip等压缩文件，并能够添加URL文件<br />
+ADD test.tar.gz /root/tmp/<br />
+ADD http://172.28.15.92/rpmdir/python2-netmiko-2.0.1.2-1.el7.noarch.rpm /root</p>
+
+<p>RUN：执行一条命令<br />
+RUN yum install -y httpd</p>
+
+<p>FROM: 基于某一个baseImage构建docker镜像<br />
+FROM centos：7.4.1708</p>
+
+<p>WORKDIR: 为RUN CMD等命令配置工作目录<br />
+WORKDIR /root</p>
+
+<p>LABEL:为docker镜像指定标签<br />
+LABEL maintainer=’sunln2008@foxmail.com’</p>
+
+<p>ENTRYPOINT &amp; CMD :容器启动时运行的命令,CMD在docker run时能够被覆盖，ENTRYPOINT则不会
+ENTRYPOINT ls /root/<br />
+CMD ls /root/</p>
+
+<p>VOLUME:进行宿主机与容器或者容器之间卷的挂载。可实现数据持久化和共享<br />
+VOLUME /DATA<br />
+ screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty<br />
+ cd /var/lib/deocker/volumes</p>
+
+<p>EXPOSE:对外暴露网络端口，实际使用时需要配置docker run -P（大写）参数<br />
+EXPOSE 80/tcp</p>
+
+<p>USER:设置容器启动时的默认用户，需要提前添加用户<br />
+USER jenkins</p>
+
+<p>ARG &amp; ENV:定义环境变量or参数，ARG能够在docker build时通过–build-arg <varname>=<value>进行传递  
+ENV test_value1='foo' test_value2='foo2'  
+ARG usernmae=jenkins</value></varname></p>
+
+<p>Dokcerfile的所有命令：</p>
+<ol>
+  <li>FROM</li>
+  <li>RUN</li>
+  <li>CMD</li>
+  <li>LABEL</li>
+  <li>MAINTAINER [deprecated]</li>
+  <li>EXPOSE</li>
+  <li>ENV</li>
+  <li>ADD</li>
+  <li>COPY</li>
+  <li>ENTRYPOINT</li>
+  <li>VOLUME</li>
+  <li>USER</li>
+  <li>WORKDIR</li>
+  <li>ARG</li>
+  <li>ONBUILD</li>
+  <li>STOPSIGNAL</li>
+  <li>HEALTHCHEECK</li>
+  <li>SHELL</li>
+</ol>
+
+<p>Dockerfile example：</p>
+<pre><code class="language-Dockerfile">FROM centos:7.4.1708
+LABEL maintainer='sunln2008@foxmail.com'
+ARG username=jenkins
+ADD testfile1 testfile2 /root/
+ADD test.tar.gz /root/tmp/
+ADD http://172.28.15.92/rpmdir/openstacksdk-0.11.4.10.dev4.tar.gz /root
+RUN mkdir /data
+RUN echo "xxxx" &gt; /data/testfile3
+VOLUME /data
+EXPOSE 80/tcp
+ENV test_value1='foo' test_value2='foo2'
+RUN useradd ${username}
+USER ${username}
+# RUN nc -l 80 &amp;
+# ENTRYPOINT ls /data/
+# CMD ls /data
+</code></pre>
+
+:ET

@@ -1,530 +1,2955 @@
-<!DOCTYPE html>
-<html lang="en-us">
 
-  <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<!doctype html>
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-  <title>
-    
-      Rony Sun &middot; RonySun blog
-    
-  </title>
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next pisces" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
 
   
 
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/main.css" />
   
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+  
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
-<link rel="shortcut icon" href="/favicon.ico" />
+  
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+  
 
-  <!-- Additional head bits without overriding original head -->
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Jekyll, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Rony.Sun" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="无问西东">
+<meta name="keywords" content="content, excerpt, layout">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rony.Sun">
+<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:site_name" content="Rony.Sun">
+<meta property="og:description" content="无问西东">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rony.Sun">
+<meta name="twitter:description" content="无问西东">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: false,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/"/>
+
+
+
+
+
+  <title>Rony.Sun - Days in a Green Hill</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <body class="index home">
+  
+  
 
-    <div id="sidebar">
-  <header>
-    <h1 class="site-title">
-      <a href="/">
+  <div class="container sidebar-position-left page-home ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Rony.Sun</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Days in a Green Hill</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
         
-        Rony Sun
-      </a>
-    </h1>
-    <p class="lead">The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.</p>
-  </header>
-  <nav id="sidebar-nav-links">
-  
-    <a class="home-link  active"
-        href="/">Home</a>
-  
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
   
 
   
-
-  
-
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-      <a class="page-link "
-          href="/about.html">About</a>
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
 
 
-  
 
-
+    </div>
   
-    
-  
-
-  
-    
-      <a class="category-link "
-          href="/category/CICD.html">CI&CD</a>
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-  
-    
-      <a class="category-link "
-          href="/category/movie.html">movie</a>
-    
-  
-
-  
-    
-      <a class="category-link "
-          href="/category/music.html">music</a>
-    
-  
-
-  
-    
-      <a class="category-link "
-          href="/category/openstack.html">openstack</a>
-    
-  
-
-  
-    
-      <a class="category-link "
-          href="/category/other.html">其他</a>
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-      <a class="category-link "
-          href="/category/test.html">测试</a>
-    
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-
-  <!-- Optional additional links to insert in sidebar nav -->
 </nav>
 
 
-  
-    <span class="site-version">Currently v3.5.3</span>
-  
 
-  <nav id="sidebar-icon-links">
-  
-    <a id="github-link"
-       class="icon" title="Github Project" aria-label="Github Project"
-       href="https://github.com/ronysun/ronysun.github.io">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
-</svg>
+ </div>
+    </header>
 
-    </a>
-    <a id="github-download-link"
-       class="icon" title="Download" aria-label="Download"
-       href="https://github.com/ronysun/ronysun.github.io/archive/v3.5.3.zip">
-      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-    </a>
-  
-
-  <a id="subscribe-link"
-     class="icon" title="Subscribe" aria-label="Subscribe"
-     href="/feed.xml">
-    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <circle cx="6.18" cy="17.82" r="2.18"/>
-    <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
-</svg>
-  </a>
-
-  
-  
-  
-  
-
-  
-    <a id="tags-link"
-       class="icon"
-       title="Tags" aria-label="Tags"
-       href="/tags.html">
-      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
-</svg>
-    </a>
-  
-
-  
-    <a id="search-link"
-       class="icon"
-       title="Search" aria-label="Search"
-       href="/search.html">
-      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg>
-    </a>
-  
-
-  <!-- Optional additional links to insert for icons links -->
-</nav>
-  <p>
-  &copy; 2018.
-  <a href="/LICENSE.md">MIT License.</a>
-</p>
-
-</div>
-
-    <main class="container">
-      <div class="content">
-  
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
 
-  
 
+<section id="posts" class="posts-expand">
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/%E5%85%B6%E4%BB%96/2018/07/12/other-how-to-build-a-blog.html">
-        How to build a blog
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">12 Jul 2018</span>
-  <span class="post-categories">
     
-      &bull;
-
-      
-      
-      
-
-      
-        <a href="/category/other.html">
-          其他
-        </a>
-      
-    
-  </span>
-</div>
-
-    
-      <p><a href="http://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/">how to build a blog</a></p>
-
     
 
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/02/OS-tempest/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
     
-      
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2020/02/OS-tempest/" itemprop="url">
+                Openstack的集成测试框架Tempst
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-20T00:00:00+08:00">
+                2020-02-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/%E6%B5%8B%E8%AF%95" itemprop="url" rel="index">
+                    <span itemprop="name">测试</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
-    
+        
+          
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1 id="摘要">摘要</h1>
+
+<p><a href="https://docs.openstack.org/tempest/latest/overview.html#">官方文档</a></p>
+
+<h2 id="quickstart">Quickstart</h2>
+
+<ol>
+  <li>pip install tempest</li>
+  <li>tempest init cloud-01，此时会在当前目录下生成cloud-01目录，子目录中的etc包含tempest.conf和tempest.conf.sample。<a href="https://docs.openstack.org/tempest/latest/configuration.html#tempest-configuration">tempest.conf的配置</a></li>
+</ol>
+
+<h2 id="tempest中的module">tempest中的module</h2>
+
+<h3 id="abc">abc</h3>
+
+<p>Python本身不提供抽象类和接口机制，要想实现抽象类，可以借助abc模块。ABC是Abstract Base Class的缩写。</p>
+
+<h3 id="six">six</h3>
+
+<p>six是为了解决Python2 和 Python3 代码兼容性而产生的。six这个名字来源于 6 = 2 x 3，为什么不用‘Five’呢？5 = 2+3，一是因为乘法更有力量(more powerful)</p>
+
+<h3 id="stevedore">stevedore</h3>
+
+<p>stevedore是用来实现动态加载代码的开源模块。它是在OpenStack中用来加载插件的公共模块。可以独立于OpenStack而安装使用。stevedore使用setuptools的entry points来定义并加载插件。entry point引用的是定义在模块中的对象，比如类、函数、实例等，只要在import模块时能够被创建的对象都可以。</p>
+
+
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/02/OS-tempest/#" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
   </article>
+
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/openstack/2018/07/12/openstack-rally-task.html">
-        rally task start命令代码及task配置文件分析
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">12 Jul 2018</span>
-  <span class="post-categories">
     
-      &bull;
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/10/zlink/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2019/10/zlink/" itemprop="url">
+                zlink项目开发记录
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-25T00:00:00+08:00">
+                2019-10-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/other" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
+
+      
+        
+          
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="数据库相关">数据库相关</h2>
+
+<ol>
+  <li>希望实现一个功能，再用户注册时，数据库中的用户流量使用数据表能够自动增加一个用户的entry</li>
+</ol>
+
+<h2 id="django">Django</h2>
+
+<ol>
+  <li>service_end_date = models.DateField(name=’service_end_date’, default=timezone.now)这段代码导致报错：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code><span class="s1">'datetime.date'</span> object has no attribute <span class="s1">'tzinfo'</span>
+</code></pre></td></tr></tbody></table></div></div>
+
+<p>其中的models.DataField应修改为DataTimeField因为后面的default设置了timezone.now</p>
+
+<ol>
+  <li>setting.py中的DEBUG=True在上线后应修改为False</li>
+</ol>
+
+
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/zlink/#" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
       
 
       
-        <a href="/category/openstack.html">
-          openstack
-        </a>
+
       
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
+  </article>
+
+  
     
-  </span>
-</div>
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/09/blog-collect/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
 
     
-      <h2 id="rally-task配置文件">rally task配置文件</h2>
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2019/09/blog-collect/" itemprop="url">
+                Blog Collect
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-23T00:00:00+08:00">
+                2019-09-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/other" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="linux系">linux系</h2>
+<p><a href="https://mp.weixin.qq.com/s/Wl8sYr9ydrLCBpTdFamFnw">Linux内核系统架构介绍</a></p>
+<h2 id="cicd">CICD</h2>
+<p><a href="https://mp.weixin.qq.com/s/vfyKgfsyacGx4uyhzJI3-A">Git 版本控制的核心概念</a></p>
+<h2 id="network">network</h2>
+<p><a href="https://rogerzhu.gitbooks.io/-tcp-udp-ip/content/">三十天学不会TCP,UDP/IP网络编程</a></p>
+
+
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/09/blog-collect/#" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
+  </article>
+
+  
+    
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/08/CICD-git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2019/08/CICD-git/" itemprop="url">
+                git使用
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-19T00:00:00+08:00">
+                2019-08-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/CI%26CD" itemprop="url" rel="index">
+                    <span itemprop="name">CI&CD</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="git-status引起的命令">git status引起的命令</h2>
+<h3 id="git-add">git add</h3>
+<p>使用git status命令可以看到被修改的文件状态为modified，新增文件未Untracked，此时
+可以通过git add <文件名>进行commit前的存储(staged)。同时，可通过git checkou -- <文件名>放弃修改。</文件名></文件名></p>
+<h3 id="git-reset-head">git reset HEAD</h3>
+<p>通过git add命令添加到暂存区的修改，可以需要通过git reset从暂存区撤回到工作区</p>
+
+
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/CICD-git/#" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
+  </article>
+
+  
+    
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/07/other-django-framework/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2019/07/other-django-framework/" itemprop="url">
+                Django框架
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-31T00:00:00+08:00">
+                2019-07-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/%E5%85%B6%E4%BB%96" itemprop="url" rel="index">
+                    <span itemprop="name">其他</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          Django框架
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/other-django-framework/">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
+  </article>
+
+  
+    
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/04/openstack-rally/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2019/04/openstack-rally/" itemprop="url">
+                Rally框架分析
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-11T00:00:00+08:00">
+                2019-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/openstack" itemprop="url" rel="index">
+                    <span itemprop="name">openstack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="rallyrally的目录结构">rally/rally的目录结构</h2>
+<pre>
+.
+├── __init__.py
+├── aas
+├── api.py
+├── cli
+├── common
+├── consts.py
+├── env
+├── exceptions.py
+├── plugins
+├── task
+├── ui
+├── utils
+└── verification
+</pre>
+<h3 id="cli目录">cli目录</h3>
+<pre>
+  .
+├── __init__.py
+├── cliutils.py
+├── commands
+│   ├── __init__.py
+│   ├── db.py
+│   ├── deployment.py
+│   ├── env.py
+│   ├── plugin.py
+│   ├── task.py
+│   └── verify.py
+├── envutils.py
+├── main.py
+└── manage.py
+</pre>
+
+<ol>
+  <li>main.py提供了程序入口
+    <div class="language-python highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8</pre></td><td class="code"><pre class="highlight"><code><span class="n">categories</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="s">"db"</span><span class="p">:</span> <span class="n">db</span><span class="o">.</span><span class="n">DBCommands</span><span class="p">,</span>
+ <span class="s">"env"</span><span class="p">:</span> <span class="n">env</span><span class="o">.</span><span class="n">EnvCommands</span><span class="p">,</span>
+ <span class="s">"deployment"</span><span class="p">:</span> <span class="n">deployment</span><span class="o">.</span><span class="n">DeploymentCommands</span><span class="p">,</span>
+ <span class="s">"plugin"</span><span class="p">:</span> <span class="n">plugin</span><span class="o">.</span><span class="n">PluginCommands</span><span class="p">,</span>
+ <span class="s">"task"</span><span class="p">:</span> <span class="n">task</span><span class="o">.</span><span class="n">TaskCommands</span><span class="p">,</span>
+ <span class="s">"verify"</span><span class="p">:</span> <span class="n">verify</span><span class="o">.</span><span class="n">VerifyCommands</span>
+ <span class="p">}</span>
+</code></pre></td></tr></tbody></table></div>    </div>
+  </li>
+  <li>deployment负责认证信息和环境信息的管理：create,list,destroy,show,use…</li>
+  <li>task任务操作的方法包括：start，list，delete,report…</li>
+  <li>以task.start的流程进行讲解：
+    <div class="highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3</pre></td><td class="code"><pre class="highlight"><code>graph TD;
+   A--&gt;B;
+   B--&gt;C;
+</code></pre></td></tr></tbody></table></div>    </div>
+  </li>
+  <li>各个方法会调用rally.api中对应的方法，如：task.start会调用_Task(APIGroup).start(),</li>
+  <li>
+    <h3 id="task目录">task目录</h3>
+  </li>
+</ol>
+<pre>
+  .
+├── __init__.py
+├── atomic.py
+├── context.py
+├── engine.py
+├── exporter.py
+├── functional.py
+├── hook.py
+├── processing
+├── runner.py
+├── scenario.py
+├── service.py
+├── sla.py
+├── task_cfg.py
+├── trigger.py
+├── types.py
+├── utils.py
+└── validation.py
+</pre>
+<ol>
+  <li>开发新的case的scenario类，需要继承scenario.py的Scenario基类</li>
+  <li>开发新的context需要继承context.py的Context，而Context又继承BaseContext</li>
+  <li>其他plugin基类还包括：sla，runner，hook</li>
+  <li>以上基类都继承了rally.common.plugin中的plugin.Plugin
+    <h4 id="plugin基类">plugin基类</h4>
+    <p>未完待续</p>
+  </li>
+</ol>
+
+
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/openstack-rally/#" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
+  </article>
+
+  
+    
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/02/other-anything/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2019/02/other-anything/" itemprop="url">
+                各种问题
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-27T00:00:00+08:00">
+                2019-02-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/%E5%85%B6%E4%BB%96" itemprop="url" rel="index">
+                    <span itemprop="name">其他</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="git-push-新的分支时提示错误">git push 新的分支时提示错误</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3</pre></td><td class="code"><pre class="highlight"><code>➜  libvirt git:<span class="o">(</span>4.5.0<span class="o">)</span> git push origin ctyun-4.5.0
+error: src refspec ctyun-4.5.0 does not match any.
+error: failed to push some refs to <span class="s1">'ssh://xx@172.18.211.200:29418/libvirt'</span>
+</code></pre></td></tr></tbody></table></div></div>
+<p>使用以下命令，成功提交：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1</pre></td><td class="code"><pre class="highlight"><code> git push origin HEAD:ctyun-4.5.0
+</code></pre></td></tr></tbody></table></div></div>
+
+
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/other-anything/#" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
+  </article>
+
+  
+    
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2018/07/other-how-to-build-a-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2018/07/other-how-to-build-a-blog/" itemprop="url">
+                How to build a blog
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-12T00:00:00+08:00">
+                2018-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/%E5%85%B6%E4%BB%96" itemprop="url" rel="index">
+                    <span itemprop="name">其他</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          如何在github.io上建立一个blog
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/other-how-to-build-a-blog/">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
+  </article>
+
+  
+    
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2018/07/openstack-rally-task/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2018/07/openstack-rally-task/" itemprop="url">
+                rally task start命令代码及task配置文件分析
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-12T00:00:00+08:00">
+                2018-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/openstack" itemprop="url" rel="index">
+                    <span itemprop="name">openstack</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="rally-task配置文件">rally task配置文件</h2>
 <p>Rally本身提供了一些task配置文件，用于提供测试用例中所需的信息包括场景测试中所传入的参数、运行方式是并行还是串行，context等信息。Rally本身提供的task 配置文件在rally/samples/task/scenarios/目录下。</p>
 
+<div class="language-yaml highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21<br/>22<br/>23<br/>24<br/>25<br/>26<br/>27<br/>28<br/>29<br/>30<br/>31<br/>32<br/>33<br/>34<br/>35<br/>36<br/>37<br/>38<br/>39<br/>40<br/>41</pre></td><td class="code"><pre class="highlight"><code><span class="nn">---</span>
+  <span class="s">NovaServers.boot_and_delete_server</span><span class="pi">:</span>
+    <span class="pi">-</span>
+      <span class="na">args</span><span class="pi">:</span>
+        <span class="na">flavor</span><span class="pi">:</span>
+            <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+        <span class="na">image</span><span class="pi">:</span>
+            <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">^cirros.*-disk$"</span>
+        <span class="na">force_delete</span><span class="pi">:</span> <span class="no">false</span>
+      <span class="na">runner</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">constant"</span>
+        <span class="na">times</span><span class="pi">:</span> <span class="m">10</span>
+        <span class="na">concurrency</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">context</span><span class="pi">:</span>
+        <span class="na">users</span><span class="pi">:</span>
+          <span class="na">tenants</span><span class="pi">:</span> <span class="m">3</span>
+          <span class="na">users_per_tenant</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">sla</span><span class="pi">:</span>
+        <span class="na">failure_rate</span><span class="pi">:</span>
+          <span class="na">max</span><span class="pi">:</span> <span class="m">0</span>
+    <span class="pi">-</span>
+      <span class="na">args</span><span class="pi">:</span>
+        <span class="na">flavor</span><span class="pi">:</span>
+            <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>
+        <span class="na">image</span><span class="pi">:</span>
+            <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">^cirros.*-disk$"</span>
+        <span class="na">auto_assign_nic</span><span class="pi">:</span> <span class="no">true</span>
+      <span class="na">runner</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s2">"</span><span class="s">constant"</span>
+        <span class="na">times</span><span class="pi">:</span> <span class="m">10</span>
+        <span class="na">concurrency</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">context</span><span class="pi">:</span>
+        <span class="na">users</span><span class="pi">:</span>
+          <span class="na">tenants</span><span class="pi">:</span> <span class="m">3</span>
+          <span class="na">users_per_tenant</span><span class="pi">:</span> <span class="m">2</span>
+        <span class="na">network</span><span class="pi">:</span>
+          <span class="na">start_cidr</span><span class="pi">:</span> <span class="s2">"</span><span class="s">10.2.0.0/24"</span>
+          <span class="na">networks_per_tenant</span><span class="pi">:</span> <span class="m">2</span>
+      <span class="na">sla</span><span class="pi">:</span>
+        <span class="na">failure_rate</span><span class="pi">:</span>
+          <span class="na">max</span><span class="pi">:</span> <span class="m">0</span>
+</code></pre></td></tr></tbody></table></div></div>
+<p>其中，args提供测试用例使用的类型方法的参数，context提供运行测试用例的上下文环境变量信息，包括模拟几个用户同时测试、租户情况等；quotas指定测试中涉及到资源的配额限制，runner提供测试的运行器情况，比如，并发测试、串行测试，等等。<br />
+rally目前支持4种runner类型，通过task配置文件中runner参数进行区分，包括：constant、constant_for_duration、rps、serial。</p>
+<ol>
+  <li>constant方式，是利用multiprocessing的Pool方式创建一个进程池，池中的进程数量等于runner的配置参数concurrency，执行每个task时，由池中的所有进程同时测试、模拟多用户并发访问的情况。constant方式中要求提供参数times，用于指定一个task中执行测试用例的次数。</li>
+  <li>constant_for_duration方式，与constant相似，也是构建一个进程池实现并发测试，区别在于，constant_for_duration方式要求额外提供一个参数duration，但是没有参数times。该参数用于指明执行测试的时间， rally一直执行task指定的测试用例，直到达到duration规定的时间长度，任务结束；</li>
+  <li>rps方式，测试任务平均分配到每个processer上，通过对每个process创建thread实现高并发测试。不同于前两种方式（使用multiprocessing.Pool 构建进程池），rps方式使用multiprocessing.Process构建执行task的worker，每个worker执行测试次数的总和是配置中的times，每个worker的rps总和是配置中rps。workers的数量由times和运行rally测试的主机上实际processer数量的最小值确定，times平均分配到每个worker上</li>
+  <li>serial方式，是使用一个process串行的执行测试。</li>
+</ol>
 
-    
+<h2 id="rally-task-start命令执行流程">rally task-start命令执行流程</h2>
 
-    
+<h2 id="rally脚本分析">rally脚本分析</h2>
+<p>Rally完成每个场景的测试是通过相应client调用openstack API操作。
+以下举例分析场景create_and_list_networks函数。在执行函数之前会有一些validation装饰器。</p>
+<ol>
+  <li><strong>validation.required_openstack</strong> <br />
+ 验证scenario类型方法运行时对于用户角色（admin/user）的要求是否得到满足，如果要求admin用户执行task，则在装饰器参数中提供admin=True，如果要求普通用户身份执行，提供users=True，默认两个值都是False。使用此装饰器，上述两个参数至少提供一个为True。检验过程中会查询当前deployment的配置，是否提供scenario要求的用户角色。</li>
+  <li><strong>validation.required_services</strong> <br />
+检验执行scenario类型方法测试时，要求的openstack service是否可用，使用装饰器时，要求在参数中提供待检验的Service名称，并且名称的书写必须包含在constants._Service所定义服务的范围内；此外，检验时，通过openstackclient查询services列表，待检查的服务应在services列表中；否则验证失败。</li>
+  <li><strong>scenario.configure</strong> <br />
+用于设置待测试方法的is_scenario和context属性，分别用于支持task的validate过程，以及通过在context中增加cleanup参数，实现测试后清理环境。
+    <div class="language-python highlighter-rouge"><div class="highlight"><table style="margin: 0px"><tbody><tr><td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20<br/>21</pre></td><td class="code"><pre class="highlight"><code><span class="o">@</span><span class="n">validation</span><span class="o">.</span><span class="n">required_services</span><span class="p">(</span><span class="n">consts</span><span class="o">.</span><span class="n">Service</span><span class="o">.</span><span class="n">NEUTRON</span><span class="p">)</span>
+<span class="o">@</span><span class="n">validation</span><span class="o">.</span><span class="n">required_openstack</span><span class="p">(</span><span class="n">users</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="o">@</span><span class="n">scenario</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span><span class="n">context</span><span class="o">=</span><span class="p">{</span><span class="s">"cleanup"</span><span class="p">:</span> <span class="p">[</span><span class="s">"neutron"</span><span class="p">]},</span>
+                 <span class="n">name</span><span class="o">=</span><span class="s">"NeutronNetworks.create_and_list_networks"</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">CreateAndListNetworks</span><span class="p">(</span><span class="n">utils</span><span class="o">.</span><span class="n">NeutronScenario</span><span class="p">):</span>
+
+ <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">network_create_args</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+     <span class="s">"""Create a network and then list all networks.
+
+     Measure the "neutron net-list" command performance.
+
+     If you have only 1 user in your context, you will
+     add 1 network on every iteration. So you will have more
+     and more networks and will be able to measure the
+     performance of the "neutron net-list" command depending on
+     the number of networks owned by users.
+
+     :param network_create_args: dict, POST /v2.0/networks request options
+     """</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">_create_network</span><span class="p">(</span><span class="n">network_create_args</span> <span class="ow">or</span> <span class="p">{})</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">_list_networks</span><span class="p">()</span>
+</code></pre></td></tr></tbody></table></div>    </div>
+    <p><a href="https://blog.csdn.net/bc_vnetwork/article/details/51818514">原文</a></p>
+  </li>
+</ol>
+
+
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/openstack-rally-task/#" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
+    </div>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
       
 
       
-        <a href="/openstack/2018/07/12/openstack-rally-task.html">More &hellip;</a>
+
       
-    
+
+      
+        
+        
+        
+        
+          <div class="post-eof"></div>
+        
+      
+    </footer>
   </article>
+
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/test/2018/06/14/test-Dockerfile.html">
-        Dockerfile介绍
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">14 Jun 2018</span>
-  <span class="post-categories">
     
-      &bull;
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2018/06/test-Dockerfile/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rony">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Rony.Sun">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+          
+          
+            
+                
+                <a class="post-title-link" href="/2018/06/test-Dockerfile/" itemprop="url">
+                Dockerfile介绍
+              </a>
+            
+          
+        </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-14T00:00:00+08:00">
+                2018-06-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/test" itemprop="url" rel="index">
+                    <span itemprop="name">test</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
       
-        test
-      
-    
-  </span>
-</div>
+        
+          
+  
+  
 
-    
-      <h2 id="dockerfile">Dockerfile</h2>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="dockerfile">Dockerfile</h2>
 <p>Dockerfile常用命令：</p>
 
+<p>ADD &amp; COPY ：拷贝文件到镜像中。ADD能够自动解压.gz .zip等压缩文件，并能够添加URL文件<br />
+ADD test.tar.gz /root/tmp/<br />
+ADD http://172.28.15.92/rpmdir/python2-netmiko-2.0.1.2-1.el7.noarch.rpm /root</p>
 
-    
+<p>RUN：执行一条命令<br />
+RUN yum install -y httpd</p>
 
-    
+<p>FROM: 基于某一个baseImage构建docker镜像<br />
+FROM centos：7.4.1708</p>
+
+<p>WORKDIR: 为RUN CMD等命令配置工作目录<br />
+WORKDIR /root</p>
+
+<p>LABEL:为docker镜像指定标签<br />
+LABEL maintainer=’sunln2008@foxmail.com’</p>
+
+<p>ENTRYPOINT &amp; CMD :容器启动时运行的命令,CMD在docker run时能够被覆盖，ENTRYPOINT则不会
+ENTRYPOINT ls /root/<br />
+CMD ls /root/</p>
+
+<p>VOLUME:进行宿主机与容器或者容器之间卷的挂载。可实现数据持久化和共享<br />
+VOLUME /DATA<br />
+ screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty<br />
+ cd /var/lib/deocker/volumes</p>
+
+<p>EXPOSE:对外暴露网络端口，实际使用时需要配置docker run -P（大写）参数<br />
+EXPOSE 80/tcp</p>
+
+<p>USER:设置容器启动时的默认用户，需要提前添加用户<br />
+USER jenkins</p>
+
+<p>ARG &amp; ENV:定义环境变量or参数，ARG能够在docker build时通过–build-arg <varname>=<value>进行传递  
+ENV test_value1='foo' test_value2='foo2'  
+ARG usernmae=jenkins</value></varname></p>
+
+<p>Dokcerfile的所有命令：</p>
+<ol>
+  <li>FROM</li>
+  <li>RUN</li>
+  <li>CMD</li>
+  <li>LABEL</li>
+  <li>MAINTAINER [deprecated]</li>
+  <li>EXPOSE</li>
+  <li>ENV</li>
+  <li>ADD</li>
+  <li>COPY</li>
+  <li>ENTRYPOINT</li>
+  <li>VOLUME</li>
+  <li>USER</li>
+  <li>WORKDIR</li>
+  <li>ARG</li>
+  <li>ONBUILD</li>
+  <li>STOPSIGNAL</li>
+  <li>HEALTHCHEECK</li>
+  <li>SHELL</li>
+</ol>
+
+<p>Dockerfile example：</p>
+<pre><code class="language-Dockerfile">FROM centos:7.4.1708
+LABEL maintainer='sunln2008@foxmail.com'
+ARG username=jenkins
+ADD testfile1 testfile2 /root/
+ADD test.tar.gz /root/tmp/
+ADD http://172.28.15.92/rpmdir/openstacksdk-0.11.4.10.dev4.tar.gz /root
+RUN mkdir /data
+RUN echo "xxxx" &gt; /data/testfile3
+VOLUME /data
+EXPOSE 80/tcp
+ENV test_value1='foo' test_value2='foo2'
+RUN useradd ${username}
+USER ${username}
+# RUN nc -l 80 &amp;
+# ENTRYPOINT ls /data/
+# CMD ls /data
+</code></pre>
+
+
+
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/test-Dockerfile/#" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
+    </div>
+
+    <div>
       
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
       
 
       
-        <a href="/test/2018/06/14/test-Dockerfile.html">More &hellip;</a>
+
       
-    
+
+      
+        
+        
+        
+        
+      
+    </footer>
   </article>
+
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/ci&cd/2018/05/02/CICD-Jenkinsfile.html">
-        CI环境搭建
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">02 May 2018</span>
-  <span class="post-categories">
+</section>
+
+
+  <nav class="pagination">
     
-      &bull;
+    
+    
+
+
+
+    <span class="page-number current">1</span> <a class="page-number" href="/page2">2</a> <a class="page-number" href="/page3">3</a> <a class="extend prev" rel="next" href="/page2"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
 
       
+
       
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/assets/images/avatar.gif"
+               alt="Rony" />
+          <p class="site-author-name" itemprop="name">Rony</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://github.com/ronysun" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="sunln2008@sina.com" target="_blank" title="Email">
+                  
+                    <i class="fa fa-fw fa-envelope-o"></i>
+                  
+                  Email
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
       
 
       
-        <a href="/category/CICD.html">
-          CI&CD
-        </a>
-      
-    
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy;  2010 - 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
   </span>
+  <span class="author" itemprop="copyrightHolder">Rony</span>
 </div>
 
-    
-      <h2 id="ci框架">CI框架</h2>
-<p>Jenkins+Gerrit+GIT</p>
-<h3 id="jenkins与gerrit的集成">Jenkins与Gerrit的集成</h3>
-<p>在Gerrit中的配置:<br />
-1.Create the profile through in Gerrit web interface for your Jenkins user, and set up a SSH key for that user.<br />
-2.Gerrit web interface &gt; Admin &gt; Groups &gt; Non-Interactive Users &gt; Add your jenkins user.<br />
-3.Admin &gt; Projects &gt; … &gt; Access &gt; Edit<br />
-    Reference: refs/*<br />
-    Read: ALLOW for Non-Interactive Users<br />
-    Reference: refs/heads/*<br />
-    Label Code-Review: -1, +1 for Non-Interactive Users<br />
-    Label Verified: -1, +1 for Non-Interactive Users</p>
 
-
-    
-
-    
-      
-      
-      
-
-      
-        <a href="/ci&cd/2018/05/02/CICD-Jenkinsfile.html">More &hellip;</a>
-      
-    
-  </article>
-  
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/%E6%B5%8B%E8%AF%95/2018/03/14/test-testlink.html">
-        testlink1.9.16的搭建
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">14 Mar 2018</span>
-  <span class="post-categories">
-    
-      &bull;
-
-      
-      
-      
-
-      
-        <a href="/category/test.html">
-          测试
-        </a>
-      
-    
-  </span>
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
 </div>
 
-    
-      <p>在centos7.3上搭建testlink1.9.16，要求环境：</p>
-<ul>
-  <li>apache(httpd)</li>
-  <li>php version &gt; 5.6</li>
-  <li>mysql(mariadb) &gt; 5.6：mysql-5.5版本在创建数据库时会报错</li>
-</ul>
-
-
-    
-
-    
-      
-      
-      
-
-      
-        <a href="/%E6%B5%8B%E8%AF%95/2018/03/14/test-testlink.html">More &hellip;</a>
-      
-    
-  </article>
-  
-
-  
-<div class="pagination">
-  <a class="pagination-item older"
-     href="/page2">
-    Older
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Pisces
   </a>
 </div>
 
 
-</div>
-    </main>
+        
 
-    <!-- Optional footer content -->
+        
+      </div>
+    </footer>
 
-  </body>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/assets/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  <script type="text/javascript" src="/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+  
+
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
 </html>
+
