@@ -1,0 +1,46 @@
+I"L<h2 id="djangodb">django.db</h2>
+<p>djanggo.db的package contents：<br />
+backends （package）<br />
+migration （package）<br />
+models （package）<br />
+transaction<br />
+utils</p>
+
+<h3 id="djangodbmodels">django.db.models</h3>
+<h4 id="django-models中的field">Django models中的Field</h4>
+<p>Django创建模型是通过继承django.db中的models实现，如：</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
+
+<span class="k">class</span> <span class="nc">Question</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">)</span>
+    <span class="n">question_test</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">pub_date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DataTimeField</span><span class="p">(</span><span class="s">'date published'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>这里的Field包括以下几种类型，<a href="https://docs.djangoproject.com/zh-hans/2.2/ref/models/fields/#model-field-types">官方文档</a>：
+AutoField
+BigAutoField
+BigIntegerField
+BinaryField
+BooleanField
+CharField
+DateField
+DateTimeField
+DecimalField
+DurationField
+EmailField
+FileField
+FieldDoesNotExist
+FilePathField
+FloatField
+GenericIPAddressField
+IPAddressField
+IntegerField
+NullBooleanField
+PositiveIntegerField
+PositiveSmallIntegerField
+SlugField
+SmallIntegerField
+TextField
+TimeField
+URLField
+UUIDField</p>
+:ET

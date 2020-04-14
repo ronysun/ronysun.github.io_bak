@@ -1,0 +1,21 @@
+I"�<h2 id="数据库相关">数据库相关</h2>
+
+<ol>
+  <li>希望实现一个功能，再用户注册时，数据库中的用户流量使用数据表能够自动增加一个用户的entry</li>
+</ol>
+
+<h2 id="django">Django</h2>
+
+<ol>
+  <li>service_end_date = models.DateField(name=’service_end_date’, default=timezone.now)这段代码导致报错：</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s1">'datetime.date'</span> object has no attribute <span class="s1">'tzinfo'</span>
+</code></pre></div></div>
+
+<p>其中的models.DataField应修改为DataTimeField因为后面的default设置了timezone.now</p>
+
+<ol>
+  <li>setting.py中的DEBUG=True在上线后应修改为False</li>
+</ol>
+:ET
