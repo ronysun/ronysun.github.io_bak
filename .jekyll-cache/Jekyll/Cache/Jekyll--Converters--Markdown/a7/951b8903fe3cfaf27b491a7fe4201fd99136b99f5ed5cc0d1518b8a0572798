@@ -1,0 +1,13 @@
+I"�<h2 id="摘要">摘要</h2>
+
+<p>some python module</p>
+
+<h2 id="abc">abc</h2>
+
+<p>Python本身不提供抽象类和接口机制，要想实现抽象类，可以借助abc模块。ABC是Abstract Base Class的缩写。</p>
+
+<h2 id="six">six</h2>
+
+<p>six是为了解决Python2 和 Python3 代码兼容性而产生的。six这个名字来源于 6 = 2 x 3，为什么不用‘Five’呢？5 = 2+3，一是因为乘法更有力量(more powerful)</p>
+
+:ET

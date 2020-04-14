@@ -1,0 +1,11 @@
+I"�<h2 id="git-push-新的分支时提示错误">git push 新的分支时提示错误</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>➜  libvirt git:<span class="o">(</span>4.5.0<span class="o">)</span> git push origin ctyun-4.5.0
+error: src refspec ctyun-4.5.0 does not match any.
+error: failed to push some refs to <span class="s1">'ssh://xx@172.18.211.200:29418/libvirt'</span>
+</code></pre></div></div>
+<p>使用以下命令，成功提交：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git push origin HEAD:ctyun-4.5.0
+</code></pre></div></div>
+:ET
