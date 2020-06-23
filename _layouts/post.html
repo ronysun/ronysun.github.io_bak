@@ -2,5 +2,6 @@
 layout: layout
 ---
 
+{% assign sorted = pages | sort:"last_modified_at" | reverse %}
 {% assign __ = site.data.languages[site.language] %}
 {% include post.html %}
