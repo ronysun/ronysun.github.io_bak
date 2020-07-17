@@ -4,7 +4,6 @@ title: "Blog Collect"
 categories:
   - other
 
-last_modified_at: 2020-07-17T13:38:27-05:00
 ---
 ### linux系
 [Linux内核系统架构介绍](https://mp.weixin.qq.com/s/Wl8sYr9ydrLCBpTdFamFnw)
