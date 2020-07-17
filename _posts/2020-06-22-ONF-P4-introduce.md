@@ -50,6 +50,57 @@ The V1Model consists of six P4 programmable components:
 1. 在该basic目录下执行make run会执行p4c编译代码，并加载到ovs中，进入mininet进行测试。
 1. 当basic.p4替换为solution中的文件时，各个host就可以ping通了。
 
+## P4 language specification
+
+### Overview
+The core abstractions：
+
+- Header type
+- Parsers
+- Tables
+- Actions
+- Match-action-unit
+- Control flow
+- Extern objects
+- User-define metadata
+- Intrinsic metadata
+
+### Data plane interface
+
+```
+control MatchActionPipe<H>(in bit<4> inputPort,
+                           inout H parsedHeaders,
+                           out bit<4> outputPort);
+```
+此declaration描述了一个叫MatchActionPipe的block，该block通过对data-dependent sequence of match-action单元装置和其他必要的constructs进行programmed
+- 第一个参数是一个命名为inputPort的4bit的值，其中的<span style="color:blue;">in<span>表示这是一个输入，不能修改
+- 第二个参数是一个命名为parsedHeaders的H类型的object，<font color=Blue>inout</font>表明这个参数是both an input and an output
+- 第三个参数是一个命名为outputPort的4bit的值，其中<font color=blue>out</font>表明这是一个初始值未定义的输出
+
+### Extern objects and functions
+P4 programs还能与体系结构（architecture）所提供的object and function交互（interact）。这些objects通过extern construct描述，such objects expose to the data-plane
+
+一个extern object描述了一组由object实现的方法，但不是这些方法的实现（类似面向对象方法中的抽象类）下面这个结构体描述了the operations offered by an incremental checksum unit
+```
+extern Checksum16 {
+    Checksum16();              // constructor
+    void clear();              // prepare unit for computation
+    void update<T>(in T data); // add data to checksum
+    void remove<T>(in T data); // remove data from existing checksum
+    bit<16> get(); // get the checksum for the data added since last clear
+}
+```
+### Very Simple Switch Architecture（VSS）
+1. Arbiter block
+2. Parser runtime block
+3. Demux block
+4. Available exter blocks
+
+### 变量类型
+1. Boolean
+2. integer
+3. string
+
 ## 参考资料
 1. https://p4.org/p4-spec/docs/P4-16-v1.2.0.html
 1. https://www.sdnlab.com/22466.html
