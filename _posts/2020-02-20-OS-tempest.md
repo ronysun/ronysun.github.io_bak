@@ -6,7 +6,6 @@ categories:
 
 last_modified_at: 2020-06-23 13:00:00 +0800
 ---
-
 # 摘要
 
 [官方文档](https://docs.openstack.org/tempest/latest/overview.html#)

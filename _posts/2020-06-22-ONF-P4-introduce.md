@@ -6,9 +6,7 @@ categories:
 tags:
   - OpenNetworking
 
-last_modified_at: 2020-06-22 13:00:00 +0800
 ---
-
 # P4 introduce
 ## 摘要
 开发环境：windows10 virtualBox vagrant  
