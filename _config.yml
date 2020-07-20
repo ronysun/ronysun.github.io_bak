@@ -122,11 +122,10 @@ index_with_subtitle: true
 menu:
   home: /
   categories: /categories/
-  #about: /about/
+#  about: /about/
   archives: /archives/
   tags: /tags/
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -219,8 +218,6 @@ font:
 social:
   GitHub: https://github.com/ronysun
   Email: sunln2008@sina.com
-  # Facebook: https://facebook.com/streamelody
-  # Weibo: http://www.weibo.com/bailuer
 
 # Social Links Icons
 # Icon Mapping:
@@ -233,8 +230,6 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Email: envelope-o
-  Facebook: facebook
-  Weibo: weibo
 
 
 # Sidebar Avatar

@@ -7,7 +7,6 @@ tags:
   - OpenNetworking
 
 ---
-
 # P4 introduce
 ## 摘要
 开发环境：windows10 virtualBox vagrant  
